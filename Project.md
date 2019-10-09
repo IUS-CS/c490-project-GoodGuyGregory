@@ -95,7 +95,7 @@ Communcation with the outside world will be done with the ability to compare you
 
  gives each User a login screen with the ability add their Full name and Email for progress tracking. Using Firebase for user entries
 
- ![Sign-In](img/index.png)
+ ![Sign-In](./img/index.png)
 
 
  **Dificulty Selection**
