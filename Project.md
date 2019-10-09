@@ -1,4 +1,4 @@
-## Musical Training Application:
+# Musical Training Application
 
 >  "Sometimes you have to create a vision, a path for a vision. It may not be apparent, and you may have to forge it yourself. And that will be the way to move your life forward."    
 >
@@ -8,7 +8,9 @@ Often times I ask myself about my Five Year plan and how it can relate to my fut
 
 This brings me right into my project proposal, I plan on developing and deploying a simple Android Application that will help those who struggle with managing their busy lives learning new Libraries and Programming Techniques but also enjoying the benefits of a **Thirty Minute** practice session and improve on their existing skills. 
 
-### Motivation for My Application
+## Motivation for My Application
+------------------------------------
+
 
 I recently traveled to the **Moog Music Store** located in Ashville, North Carolina. It was amazing inside they have alot of demo equipment and technology you can use, There was a lot of **expensive** and **Magnificient** Gear all free for Impromptu Jam Sessions. 
 
@@ -21,9 +23,10 @@ I found that this technique was workable through many instrument. I myself the p
 
 I thought lets try to make an application for this and Here is mty strategy for completing this. 
 
-### Meeting Minimum requirements
+# Meeting Minimum requirements
 
-**User Interfaces**
+## User Interfaces:
+
 
 **Difficulty Selector**
 
@@ -58,25 +61,25 @@ This Feature will only feature the Basic Keys Keys with one or Two (Sharps/Flats
 The Progressions will be filtered based on the user's difficulty selection in the previous state and if you have proven yourself your ability to perform.
 
 
-**Data Persistence**
+## Data Persistence 
+------------------------
 
 **Progress Tracking** 
 
->"Practice isnt the thing you do once you're good It's the thing you do that makes you good.
+>"Practice isnt the thing you do once you're good It's the thing you do that makes you good."
 >
 >Malcolm Gladwell
 
 **Tracking Practice**
 
- Practice is important and improving skills as a Musician are barely felt without the pain and pleasure of seeing the blisters on your fretting hand get more calase and strong as you conqure your goals and play in that new interesting key.
+ Practice is important and improving skills as a Musician are barely felt without the pain and pleasure of seeing the blisters on your fretting hand get more calase and strong as you conqure your goals and play in that new interesting key. Malcolm Gladwell, Once wrote in his Book *"Outliners"* that it takes 10,000 Hours to become an expert. Although time could be tracked on the app. it might be easier to use the track progress feature.
 
  Tracking your Progress by storing sessions and Spins will help the user's gain an understanding into the areas which will need improvement in the case of guitar shapes and calase development. Or the Finger possitions of the Piano.
 
 
+## Outside World Communication
+----------------------------------
 
-
-
-**Outside World Communication**
 
 **Progress Tracker**
 
@@ -84,63 +87,97 @@ Communcation with the outside world will be done with the ability to compare you
 
 
 
-## MVC Breakdown Plans**
+## MVC Breakdown Plans
+-----------------------
 
- **View Descriptions**
+ ## View Descriptions
 
  **Sign-in** 
 
- gives each memeber 
+ gives each User a login screen with the ability add their Full name and Email for progress tracking. Using Firebase for user entries
+
+ ![Sign-In](img/index.png)
+
 
  **Dificulty Selection**
 
- **Spin View**
+ Users can then select from a
+
+* Easy- This Feature will only feature the Basic Keys Keys with one or Two (Sharps/Flats) *accidentals*. 
+
+* Medium- This Feature will only feature the Basic Keys Keys with one or Two (Sharps/Flats) *accidentals*. as Well as Minor Key Equivalents. 
+
+* Hard- This Feature will only feature the Basic Keys Keys with one or Two (Sharps/Flats) *accidentals*. as Well as Minor Key Equivalents. As well as Extended Chords. And Basic Genre Selection.
+
+![Sign-In](img/wheel-view.png)
+
+ 
+
+ **Progression View**
+
+The Progression view will be displayed to users after the user has logged their email and selected a Difficulty  for their profile and Then Ssun the Wheel (Circle of 5ths) to allow a progression to be displayed for their practice session on the next view. After the Key signature is picked The Progression will be displayed in a style like the example image below
+
+![Progression View](img/progression-view.png)
+
+The View will feature a title and the Corresponding Roman Numberals for the Case (Major/Minor) and the Main Key Signature's Starting Note. Progressions will be filtered from the Difficulty Selection on the prior Screen 
+
+
+**Status View**
+
+The Status View will show Progressions the user is able to acces through the Difficulty selection on the prior screen and all the Progressions they have played thus far. Because even the pros forget Roman Numeral Analaysis Skills
+
+The View will also Feature a List of other's and The amount of Difficulty They are operating on as a guage of their progress and skills.
+
+![Status View](img/stats-view.png)
+
+## Model Descriptions
+
+ **Sign-in** 
+
+
+ 
+ **Data Access Objects**   
+
+ Will be used for the Storage of elements to the Firebase DB,
+
+**Logic** 
+
+ As well as Login Buttons Which will change the ViewModel to the Login Screen where it will prompt for userdata
+
+**Methods**
+
+* Login Handler for the Login-Events
+* onCreate For the Sign-in Viewmodel will need to be coded in order to handle the Firebase Storage and Access to Specific User Tables with Firebase
+* Authorize data access for the Users Via Firebase Auth with Email
+
+
+ **Difficulty Selection & Spin View**
+
+**Classes**
+
+Objects to Build the appropriate Views based on the difficulty of the Musical Progressions
+
+Specific Classes will be used to Represent Databases with the Tables that will feature the appropraite Progressions based on the Class
+
+**Logic**
+
+* Pass the ViewModel for the appropriate Class difficulty.
+*Handle the view of the Program based on the Client difficulty selection
+
+**Methods**
+
+* OnCreate Attribtues for the Selected difficulty class
+* Retrieval of the appropraite DB based on the client selection of difficulty
+*  Passing the Keysignature to the Next ViewModel to display the Progression
 
  **Progression View**
 
 
- **Model Descriptions**
-
- **Sign-in** 
-
- Classes:
-
-Logic:
-
-Methods:
-
- **Dificulty Selection**
-
-Classes:
-
-Logic:
-
-Methods:
+ **Controller** 
 
 
- **Spin View**
+**Application Layouts**
 
-Classes:
-
-Logic:
-
-Methods:
-
-
- **Progression View**
-
- **Controller** Description*
-
-
-
-**Portrait View**
-
-Will Feature View of the 
-* Controls
-
-**Landscape View**
-
-Will Feature the 
-* Controls
+The Application is intended to operate in both *Landscape* and *Portrait View*. The Application will feature the same layout for all devices scaling the Viewmodels and Classes with the same constraints to the appropraite scale
 
 
