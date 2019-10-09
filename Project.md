@@ -80,8 +80,7 @@ The Progressions will be filtered based on the user's difficulty selection in th
 ## Outside World Communication
 ----------------------------------
 
-
-**Progress Tracker**
+**Progression Tracking**
 
 Communcation with the outside world will be done with the ability to compare your rank amongst other users. Overall feeling like a rockstar compared to others will give you some bragging rights. amongst friends and other musicans and with great power comes great responsibility, and with the confidence users willl get from knowing they are practicing towards their own improvement it will allow others to see their skills and those with much more practice stats the confidence to perhaps help assist others in learning.
 
@@ -132,17 +131,15 @@ The View will also Feature a List of other's and The amount of Difficulty They a
 
 ## Model Descriptions
 
- **Sign-in** 
+### Sign-in View
 
+ **Classes**   
 
- 
- **Data Access Objects**   
-
- Will be used for the Storage of elements to the Firebase DB,
+ * Will be used for the storage of elements to the Firebase DB, They will also hold specific profile information for the user of the application with Google Firebase Authentication
 
 **Logic** 
 
- As well as Login Buttons Which will change the ViewModel to the Login Screen where it will prompt for userdata
+ * As well as Login Buttons Which will change the ViewModel to the Login Screen where it will prompt for userdata
 
 **Methods**
 
@@ -151,13 +148,13 @@ The View will also Feature a List of other's and The amount of Difficulty They a
 * Authorize data access for the Users Via Firebase Auth with Email
 
 
- **Difficulty Selection & Spin View**
+ ### Difficulty Selection & Spin View
 
 **Classes**
 
-Objects to Build the appropriate Views based on the difficulty of the Musical Progressions
+* Objects to Build the appropriate Views based on the difficulty of the Musical Progressions
 
-Specific Classes will be used to Represent Databases with the Tables that will feature the appropraite Progressions based on the Class
+* Specific Classes will be used to Represent Databases with the Tables that will feature the appropraite Progressions based on the Class
 
 **Logic**
 
@@ -170,10 +167,29 @@ Specific Classes will be used to Represent Databases with the Tables that will f
 * Retrieval of the appropraite DB based on the client selection of difficulty
 *  Passing the Keysignature to the Next ViewModel to display the Progression
 
- **Progression View**
+ ### Progression View
 
 
- **Controller** 
+ ## Controller 
+ --------------------
+
+Each View will have their own Classes that help contribute to passing variables and states to other parts of the application.
+
+**OnCreate**
+
+* Will Initialize a User Object, This Object will then be stored in the Firebase Database with User Authentication. 
+
+* Rotation will maintain another view which will maintain the state of the application
+
+**OnPause**
+
+* Depending on the View the Contoller will Allow for the Saving of the current state of the **Circle of Fifths** and the Progression which will be feature after. There will be a Counter for the amount of time the Progression in particular was featured on the user's list.
+
+**OnDestroy**
+
+* The Application will Push the state of the user's History to the Firestore Database and maintain the current counts of the progressions which the user has taken. 
+
+* The History should be pushed to the Firestore DB before closing. 
 
 
 **Application Layouts**
