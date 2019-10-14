@@ -4,7 +4,7 @@ You will create a document to describe the particular Android project you wish t
 
 . Create a new Markdown or Asciidoctor document to replace this readme document.
 . Format your document with proper headings, sections, paragraphs, etc.
-. Your document should include descriptions of the rest of this document in copmelete and professional prose.
+. Your document should include descriptions of the rest of this document in complete and professional prose.
 
 == Section 1 – Motivation for Your App
 
