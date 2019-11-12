@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">musictrainer</string>
+    <string name="keySignature" />
+    <string name="chordProgressionValue" />
+    <string name="generate_another_progression">Generate Another Progression</string>
+    <string name="keySignatureTextView">keySignatureTextView</string>
 </resources>
