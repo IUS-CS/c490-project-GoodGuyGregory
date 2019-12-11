@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="loginScreen">#545A6B</color>
+    <color name="colorBackground">#CDB0B0CE</color>
+    <color name="boxColor">#EB9EA7A3</color>
+    <color name="textSecondary">#C002DD</color>
+    <color name="textPrimary">#3FD0DA</color>
+
+<!--    Difficulty Colors:  -->
+    <color name="easyMode">#B298DC</color>
+    <color name="medMode">#A663CC</color>
+    <color name="hardMode">#6F2DBD</color>
+
 </resources>

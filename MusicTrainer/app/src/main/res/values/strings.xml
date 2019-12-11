@@ -1,3 +1,44 @@
 <resources>
+<!--    Main Activity  -->
     <string name="app_name">musictrainer</string>
+    <string name="diff" />
+    <string name="keySignature">Key Signature</string>
+    <string name="chordProgressionValue" />
+    <string name="keySignatureValue"/>
+    <string name="login_toast">Successfully Logged in!</string>
+    <string name="generate_another_progression">Generate Another Progression</string>
+
+    <!--    Difficulty Values-->
+    <string name="easy_mode">Easy Mode</string>
+    <string name="medium_mode">Medium Mode</string>
+    <string name="hard_mode">Hard Mode</string>
+
+
+    <!--    SignupActivity Values-->
+    <string name="title_activity_sign_up">Sign Up</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_up">Sign n</string>
+    <string name="app_title">Music Trainer</string>
+    <string name="already_user_login">Already have an account? Sign in here</string>
+
+<!--  LoginActivity Values  -->
+    <string name="title_activity_login">Sign in</string>
+    <string name="login_email">Email</string>
+    <string name="login_password">Password</string>
+    <string name="action_log_in">Login</string>
+    <string name="not_user_register">Already have an account? Sign in here</string>
+
+    <!--  Home Text View  -->
+    <string name="welcome_text">Welcome!</string>
+    <string name="welcome_message">Welcome to Music Trainer, to begin grab your instrument and find a comfy chair. First Tune or Turn on your instrument and begin warming up with some basic scale patterns.
+        When you are ready press the button below</string>
+    <string name="begin_button">Begin Practice!</string>
+
+<!--    Difficulty Selection View:   -->
+    <string name="diff_title">Practice Difficulty</string>
+    <string name="easy_button">Easy</string>
+    <string name="medium_button">Medium</string>
+    <string name="hard_button">Hard</string>
+
 </resources>
